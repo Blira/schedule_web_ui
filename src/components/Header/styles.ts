@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
         background-color: ${red[300]};
+        width: 100%;
 
         padding: 1rem;
         height: 5rem;
@@ -14,8 +15,6 @@ export const Container = styled.div`
 
 
         color: ${common.white};
-
-        
 `
 
 export const Logo = styled.div`

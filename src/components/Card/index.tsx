@@ -18,27 +18,27 @@ interface CardProps {
 export default function Card(cardProps: CardProps) {
     return (
         <LocationCard>
-        <CardContent>
-            <UpperCard>
-                <CardTitle>{cardProps.title}</CardTitle>
-                <AvatarContainer>
-                    <DoctorAvatar src={cardProps.avatar}/>
-                    <strong>{cardProps.name}</strong>
-                </AvatarContainer>
-                <span>{cardProps.description}</span>
-            </UpperCard>
-            <CardDivider />
-            <LowerCard>
-                <LowerCardInfoContainer>
-                    <CalendarIcon />
-                    <span>{cardProps.firstInfo}</span>
-                </LowerCardInfoContainer>
-                <LowerCardInfoContainer>
-                    <Clock />
-                    <span>{cardProps.secondInfo}</span>
-                </LowerCardInfoContainer>
-            </LowerCard>
-        </CardContent>
-    </LocationCard>
+            <CardContent>
+                <UpperCard>
+                    <CardTitle>{cardProps.title}</CardTitle>
+                    <AvatarContainer>
+                        <DoctorAvatar src={cardProps.avatar} />
+                        <strong>{cardProps.name}</strong>
+                    </AvatarContainer>
+                    <span>{cardProps.description}</span>
+                </UpperCard>
+                <CardDivider />
+                <LowerCard>
+                    <LowerCardInfoContainer>
+                        <CalendarIcon />
+                        <span>{cardProps.firstInfo}</span>
+                    </LowerCardInfoContainer>
+                    <LowerCardInfoContainer>
+                        <Clock />
+                        <span>{cardProps.secondInfo}</span>
+                    </LowerCardInfoContainer>
+                </LowerCard>
+            </CardContent>
+        </LocationCard>
     )
 }

@@ -4,14 +4,21 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
         border-radius: 0.4rem;
-        margin: 0rem 4rem;
-        padding: 4rem;
+        margin-top: 4rem;
+        padding: 0rem 4rem;
 
         display: grid;
+        
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
-    
 
+        @media (max-width: 817px) {
+        grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 615px) {
+        grid-template-columns: repeat(1, 1fr);
+        }
 `
 
 export const LocationCard = styled.div`
