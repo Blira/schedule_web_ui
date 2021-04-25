@@ -29,6 +29,11 @@ export const LocationCard = styled.div<LocationCardProps>`
                  ${props => props.animated ? 'transform: scale(1.05); cursor: pointer;' : ''};
                 
         }
+
+        &:active {
+                 ${props => props.animated ? 'opacity: 0.6;' : ''};
+                
+        }
 `
 
 interface AvatarProps {
