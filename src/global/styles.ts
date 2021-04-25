@@ -20,7 +20,8 @@ export const GlobalStyles = createGlobalStyle`
     --dark-blue: #363F5F;
     --text-body: #969CB3;
     --light-grey: #F0F2F5;
-    --shape: #FFFFFF
+    --grey: #808080;
+    --shape: #FFFFFF;
 }
 
 

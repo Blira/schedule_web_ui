@@ -1,11 +1,11 @@
 import './styles'
-import Calendar from 'react-calendar'
+import { Calendar } from './styles'
 
 export function ScheduleCalendar() {
     return (
         <Calendar
             onClickDay={(event) => {
-                alert(event)
+                console.log(event)
             }}
         />
     )

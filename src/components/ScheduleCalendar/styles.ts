@@ -1,8 +1,30 @@
 import styled from 'styled-components';
-import Calendar from 'react-calendar'
+import ReactCalendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
+import { opacify } from 'polished';
 
-export const FooCalendar = styled(Calendar)`
 
+export const Calendar = styled(ReactCalendar)`
+    width: 100%;
+    border-radius: 0.4rem;
 
+    .react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus{ 
+        background: ${opacify(0.1, 'rgba(128, 128, 128, 0.2)')};
+    }
+
+    .react-calendar__tile--active {
+        background: ${opacify(0.1, 'rgba(128, 128, 128, 0.2)')};
+    }
+
+    .react-calendar__tile--now {
+        background-color: var(--light-grey);
+        &:hover {
+        background-color: grey;
+
+        }
+    }
+
+    .react-calendar__month-view__days__day--weekend {
+        color: grey;
+    }
 `
