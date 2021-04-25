@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
-        background-color: var(--blue-dark);
         border-radius: 0.4rem;
         margin: 0rem 4rem;
         padding: 4rem;

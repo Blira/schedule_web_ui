@@ -6,9 +6,9 @@ export const GlobalStyles = createGlobalStyle`
     --blue: #5429CC;
     --green: #33CC95;
     --blue-light: #6933FF;
-    --blue-dark: #363F5F;
+    --dark-blue: #363F5F;
     --text-body: #969CB3;
-    --background: #F0F2F5;
+    --light-grey: #F0F2F5;
     --shape: #FFFFFF
 }
 
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h5, strong {
 }
 
 body {
-    background: var(--blue-dark);
+    background: var(--dark-blue);
     -webkit-font-smoothing: antialiased;
 }
 

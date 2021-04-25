@@ -45,12 +45,13 @@ export function MainPage() {
                 secondInfo: "1h 30m Session"
             }
         ])
-    }, [locations])
+    }, [])
 
     return (
         <CardContainer>
-            {locations.map(location => (
+            {locations.map((location, index) => (
             <Card
+            key={index}
             title={location.title}
             avatar={location.avatar}
             name={location.name}

@@ -1,7 +1,9 @@
-import {Container} from './styles';
+import {Container, AppIcon} from './styles';
 
 export function Header() {
     return (
-        <Container>HEADER</Container>
+        <Container>
+            <AppIcon fontSize="large" />
+        </Container>
     )
 }

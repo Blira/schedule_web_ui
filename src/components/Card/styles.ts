@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
-        background-color: var(--blue-dark);
         border-radius: 0.4rem;
         margin: 0rem 4rem;
         padding: 4rem;
@@ -17,7 +16,7 @@ export const Container = styled.div`
 
 export const LocationCard = styled.div`
         padding: 1rem;
-        background-color: var(--background);
+        background-color: var(--light-grey);
         border-radius: 0.4rem;
 
         box-shadow: 0.1rem 0.1rem 0.4rem;
