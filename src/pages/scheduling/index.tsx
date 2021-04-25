@@ -2,6 +2,7 @@ import Card, { CardProps } from "../../components/Card"
 import { ScheduleCalendar } from "../../components/ScheduleCalendar";
 import { Container } from "./styles"
 import SubHeader from "../../components/SubHeader"
+import TimeTable from "../../components/TimeTable";
 
 interface SchedulingPageProps {
     location: {
@@ -25,6 +26,9 @@ export function SchedulingPage(schedulingPageProps: SchedulingPageProps) {
             />
             <Container>
                 <ScheduleCalendar />
+            </Container>
+            <Container>
+                <TimeTable />
             </Container>
         </>
     )

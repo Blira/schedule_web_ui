@@ -8,6 +8,11 @@ export const Calendar = styled(ReactCalendar)`
     width: 100%;
     border-radius: 0.4rem;
 
+    .react-calendar__navigation__label__labelText{
+        font-size: 1rem;
+
+    }
+
     .react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus{ 
         background: ${opacify(0.1, 'rgba(128, 128, 128, 0.2)')};
     }
