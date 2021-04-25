@@ -1,4 +1,5 @@
 import { CardProps } from "../../components/Card"
+import SubHeader from "../../components/SubHeader"
 
 interface SchedulingPageProps {
     location: {
@@ -9,6 +10,6 @@ interface SchedulingPageProps {
 export function SchedulingPage(schedulingPageProps: SchedulingPageProps) {
     console.log(schedulingPageProps.location.state)
     return (
-        <h2>SCHEDULING</h2>
+        <SubHeader />
     )
 }

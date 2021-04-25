@@ -1,4 +1,11 @@
-import {createGlobalStyle} from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
+
+import ArrowBackIos from '@material-ui/icons/ArrowBackIos';
+
+export const ArrowBack = styled(ArrowBackIos)`
+    color: var(--light-grey)
+`
+
 
 export const GlobalStyles = createGlobalStyle`
     :root {
