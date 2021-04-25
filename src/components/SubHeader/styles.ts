@@ -1,21 +1,27 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-    padding: 1.5rem;
-    display: flex;
-    align-items: center;
+interface ContainerProps {
+    clickable: boolean;
+}
 
+export const Container = styled.div<ContainerProps>`
+    padding: 1.5rem;
+    height: 6rem;
+
+    @media(max-width: 407px){
+        height: 9rem;
+    }
     div {
 
         display: flex;
         align-items: center;
-
+        
         transition: opacity 0.3s;
 
         &:hover {
-        cursor: pointer;
-        opacity: 0.7;
-    }
+                 ${props => props.clickable ? 'cursor: pointer; opacity: 0.7;' : ''};
+                
+        }
     }
     
     strong {

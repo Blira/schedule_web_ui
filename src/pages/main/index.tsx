@@ -1,8 +1,12 @@
 import CardContainer from '../../components/CardContainer'
+import SubHeader from '../../components/SubHeader'
 
 export function MainPage() {
 
     return (
-        <CardContainer />
+        <>
+            <SubHeader empty={true} />
+            <CardContainer />
+        </>
     )
 }

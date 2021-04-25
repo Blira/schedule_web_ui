@@ -3,12 +3,7 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
-        border-radius: 0.4rem;
-        margin-top: 4rem;
-        padding: 0rem 4rem;
-
         display: grid;
-        
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
 

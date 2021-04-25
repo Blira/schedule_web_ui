@@ -1,5 +1,5 @@
 import { Header } from './components/Header';
-import { GlobalStyles } from './global/styles';
+import { GlobalStyles, PageContainer } from './global/styles';
 import Routes from './routes';
 
 function App() {
@@ -7,7 +7,9 @@ function App() {
     <>
       <GlobalStyles />
       <Header />
-      <Routes />
+      <PageContainer>
+        <Routes />
+      </PageContainer>
     </>
   );
 }

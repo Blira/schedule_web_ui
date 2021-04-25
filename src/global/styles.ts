@@ -6,6 +6,10 @@ export const ArrowBack = styled(ArrowBackIos)`
     color: var(--light-grey)
 `
 
+export const PageContainer = styled.div`
+        padding: 0rem 4rem;
+`
+
 
 export const GlobalStyles = createGlobalStyle`
     :root {
