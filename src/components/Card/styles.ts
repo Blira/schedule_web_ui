@@ -25,6 +25,7 @@ export const LocationCard = styled.div`
 
         &:hover {
                 transform: scale(1.05);
+                cursor: pointer;
         }
 `
 export const DoctorAvatar = styled(Avatar)`
