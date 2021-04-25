@@ -4,6 +4,7 @@ import {
 } from './styles'
 import CalendarIcon from '@material-ui/icons/CalendarToday';
 import Clock from '@material-ui/icons/QueryBuilder';
+import { useHistory } from 'react-router-dom';
 
 
 interface CardProps {
@@ -15,9 +16,13 @@ interface CardProps {
     secondInfo: string;
 }
 
+
+
 export default function Card(cardProps: CardProps) {
+    const history = useHistory();
+    const handleClick = () => history.push('/scheduling');
     return (
-        <LocationCard>
+        <LocationCard onClick={handleClick}>
             <CardContent>
                 <UpperCard>
                     <CardTitle>{cardProps.title}</CardTitle>

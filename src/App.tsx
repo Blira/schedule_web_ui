@@ -1,13 +1,13 @@
 import { Header } from './components/Header';
 import { GlobalStyles } from './global/styles';
-import { MainPage } from './pages/main';
+import Routes from './routes';
 
 function App() {
   return (
     <>
-    <GlobalStyles />
-    <Header />
-    <MainPage />
+      <GlobalStyles />
+      <Header />
+      <Routes />
     </>
   );
 }
