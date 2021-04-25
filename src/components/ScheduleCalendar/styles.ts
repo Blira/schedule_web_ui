@@ -7,17 +7,11 @@ import { opacify } from 'polished';
 export const Calendar = styled(ReactCalendar)`
     width: 100%;
     border-radius: 0.4rem;
+     * {
+    font-size: 1rem;
+     }
 
-    .react-calendar__navigation__label__labelText{
-        font-size: 1rem;
-
-    }
-
-    .react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus{ 
-        background: ${opacify(0.1, 'rgba(128, 128, 128, 0.2)')};
-    }
-
-    .react-calendar__tile--active {
+    .react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus, .react-calendar__tile--active{ 
         background: ${opacify(0.1, 'rgba(128, 128, 128, 0.2)')};
     }
 
