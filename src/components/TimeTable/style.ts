@@ -21,6 +21,14 @@ export const TimesContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+
+    @media (max-width: 817px) {
+        grid-template-columns: repeat(2, 1fr);
+        }
+
+    @media (max-width: 615px) {
+    grid-template-columns: repeat(1, 1fr);
+    }
     `
 
 interface TimeProps {
