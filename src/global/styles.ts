@@ -17,7 +17,7 @@ export const PageContainer = styled.div`
 
 export const GlobalStyles = createGlobalStyle`
     :root {
-    --red: #E52E4D;
+    --light-red: #e57373;
     --blue: #5429CC;
     --green: #33CC95;
     --blue-light: #6933FF;

@@ -1,9 +1,8 @@
-import { red, common } from '@material-ui/core/colors';
 import AddToQueue from '@material-ui/icons/AddToQueue';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-        background-color: ${red[300]};
+        background-color: var(--light-red);
         width: 100%;
 
         padding: 1rem;
@@ -14,7 +13,7 @@ export const Container = styled.div`
         justify-content: space-between;
 
 
-        color: ${common.white};
+        color: white;
 `
 
 export const Logo = styled.div`
