@@ -25,7 +25,7 @@ export function ScheduleCalendar() {
     const busyDates: BusyDate[] = [
         {
             month: 4,
-            days: [28]
+            days: [28, 26, 27, 29, 12, 14, 20, 17, 7, 6]
         }
     ]
 
@@ -33,8 +33,9 @@ export function ScheduleCalendar() {
         const currentMonth: BusyDate = busyDates.find(busyDate => busyDate.month === date.getMonth()) as BusyDate;
         const disableMonth = !!currentMonth
         const disableDay = currentMonth?.days.includes(date.getDate());
+        const isWeekend = [0, 6].includes(date.getDay());
         const disable = disableDay && disableMonth;
-        return disable;
+        return isWeekend ? isWeekend : disable;
     }
 
 
