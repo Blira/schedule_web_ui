@@ -12,6 +12,7 @@ export function ScheduleCalendar() {
 
     return (
         <Calendar
+            minDate={new Date()}
             onClickDay={handleClick}
         />
     )
