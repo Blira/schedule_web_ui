@@ -41,6 +41,7 @@ export const Time = styled.div<TimeProps>`
     padding: 1rem;
 
     &:hover {
+        cursor: pointer;
         background: ${darken(0.9, 'rgba(128, 128, 128, 0.2)')};
     }
 
