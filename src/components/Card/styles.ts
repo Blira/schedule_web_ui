@@ -9,8 +9,6 @@ export const Container = styled.div`
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
-    
-
 `
 
 
@@ -40,7 +38,8 @@ export const Avatar = styled.img<AvatarProps>`
         src: ${props => props.src};
         margin-top: 0.5rem;
         border-radius: 3rem;
-        max-width: 4rem;
+        width: 4rem;
+        height: 4rem;
 `
 export const CardDivider = styled.hr`
         border-top: 1px solid #bbb;   
