@@ -1,4 +1,3 @@
-import { Avatar, Divider } from '@material-ui/core';
 import styled from 'styled-components';
 
 
@@ -33,10 +32,19 @@ export const LocationCard = styled.div<LocationCardProps>`
                 
         }
 `
-export const DoctorAvatar = styled(Avatar)`
+
+interface AvatarProps {
+        src: string;
+}
+export const Avatar = styled.img<AvatarProps>`
+        src: ${props => props.src};
         margin-top: 0.5rem;
+        border-radius: 3rem;
+        max-width: 4rem;
 `
-export const CardDivider = styled(Divider)`
+export const CardDivider = styled.hr`
+        border-top: 1px solid #bbb;   
+
 `
 
 export const CardTitle = styled.strong`

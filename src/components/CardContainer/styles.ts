@@ -1,4 +1,4 @@
-import { Avatar, Divider } from '@material-ui/core';
+
 import styled from 'styled-components';
 
 
@@ -28,11 +28,6 @@ export const LocationCard = styled.div`
         &:hover {
                 transform: scale(1.05);
         }
-`
-export const DoctorAvatar = styled(Avatar)`
-        margin-top: 0.5rem;
-`
-export const CardDivider = styled(Divider)`
 `
 
 export const CardTitle = styled.strong`

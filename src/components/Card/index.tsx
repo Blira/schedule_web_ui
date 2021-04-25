@@ -1,5 +1,5 @@
 import {
-    CardContent, LocationCard, DoctorAvatar, AvatarContainer,
+    CardContent, LocationCard, Avatar, AvatarContainer,
     UpperCard, LowerCard, CardDivider, LowerCardInfoContainer, CardTitle
 } from './styles'
 import CalendarIcon from '@material-ui/icons/CalendarToday';
@@ -28,7 +28,7 @@ export default function Card(cardProps: CardProps) {
                 <UpperCard>
                     <CardTitle>{cardProps.title}</CardTitle>
                     <AvatarContainer>
-                        <DoctorAvatar src={cardProps.avatar} />
+                        <Avatar src={cardProps.avatar} />
                         <strong>{cardProps.name}</strong>
                     </AvatarContainer>
                     <span>{cardProps.description}</span>
