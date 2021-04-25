@@ -23,7 +23,11 @@ export const TimesContainer = styled.div`
     gap: 1rem;
     `
 
-export const Time = styled.div`
+interface TimeProps {
+    selected: boolean;
+}
+
+export const Time = styled.div<TimeProps>`
     background: ${opacify(0.1, 'rgba(128, 128, 128, 0.2)')};
     border-radius: 0.4rem;
     padding: 1rem;
@@ -31,6 +35,8 @@ export const Time = styled.div`
     &:hover {
         background: ${darken(0.9, 'rgba(128, 128, 128, 0.2)')};
     }
+
+    ${props => props.selected && ` background: ${darken(1, 'rgba(128, 128, 128, 0.3)')}`}
 `
 
 export const Table = styled.table`
