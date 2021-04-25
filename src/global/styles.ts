@@ -7,7 +7,10 @@ export const ArrowBack = styled(ArrowBackIos)`
 `
 
 export const PageContainer = styled.div`
-        padding: 0rem 4rem;
+        padding: 0rem 2rem;
+        @media (max-width: 615px) {
+            padding: 0rem 1rem;
+        }
 `
 
 
