@@ -1,9 +1,13 @@
-import {Container, AppIcon} from './styles';
+import { Container, AppIcon, Logo } from './styles';
 
 export function Header() {
     return (
         <Container>
-            <AppIcon fontSize="large" />
+            <Logo>
+                <AppIcon fontSize="large" />
+                <span>Scheduler</span>
+            </Logo>
+                <span>Agendamento de consultas odontológicas.</span>
         </Container>
     )
 }
