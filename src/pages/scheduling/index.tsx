@@ -1,4 +1,4 @@
-import { CardProps } from "../../components/Card"
+import Card, { CardProps } from "../../components/Card"
 import SubHeader from "../../components/SubHeader"
 
 interface SchedulingPageProps {
@@ -8,8 +8,19 @@ interface SchedulingPageProps {
 }
 
 export function SchedulingPage(schedulingPageProps: SchedulingPageProps) {
-    console.log(schedulingPageProps.location.state)
+    const cardProps = schedulingPageProps.location.state;
     return (
-        <SubHeader />
+        <>
+            <SubHeader />
+            <Card
+                animated={false}
+                title={cardProps.title}
+                avatar={cardProps.avatar}
+                name={cardProps.name}
+                description={cardProps.description}
+                firstInfo={cardProps.firstInfo}
+                secondInfo={cardProps.secondInfo}
+            />
+        </>
     )
 }

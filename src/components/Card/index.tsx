@@ -14,6 +14,7 @@ export interface CardProps {
     description: string;
     firstInfo: string;
     secondInfo: string;
+    animated?: boolean
 }
 
 
@@ -22,7 +23,7 @@ export default function Card(cardProps: CardProps) {
     const history = useHistory();
     const handleClick = () => history.push({ pathname: '/scheduling', state: cardProps });
     return (
-        <LocationCard onClick={handleClick}>
+        <LocationCard onClick={handleClick} animated={cardProps.animated}>
             <CardContent>
                 <UpperCard>
                     <CardTitle>{cardProps.title}</CardTitle>

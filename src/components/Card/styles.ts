@@ -14,7 +14,12 @@ export const Container = styled.div`
 
 `
 
-export const LocationCard = styled.div`
+
+interface LocationCardProps {
+        animated?: boolean
+}
+
+export const LocationCard = styled.div<LocationCardProps>`
         padding: 1rem;
         background-color: var(--light-grey);
         border-radius: 0.4rem;
@@ -24,8 +29,8 @@ export const LocationCard = styled.div`
         transition: transform 0.5s;
 
         &:hover {
-                transform: scale(1.05);
-                cursor: pointer;
+                 ${props => props.animated ? 'transform: scale(1.05); cursor: pointer;' : ''};
+                
         }
 `
 export const DoctorAvatar = styled(Avatar)`

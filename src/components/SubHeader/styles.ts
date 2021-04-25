@@ -10,9 +10,11 @@ export const Container = styled.div`
         display: flex;
         align-items: center;
 
+        transition: opacity 0.3s;
 
         &:hover {
         cursor: pointer;
+        opacity: 0.7;
     }
     }
     

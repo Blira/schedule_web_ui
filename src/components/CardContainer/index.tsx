@@ -56,6 +56,7 @@ export default function CardContainer() {
             {locations.map((location, index) => (
                 <Card
                     key={index}
+                    animated={true}
                     title={location.title}
                     avatar={location.avatar}
                     name={location.name}
